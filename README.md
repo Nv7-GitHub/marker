@@ -1,6 +1,7 @@
 # Marker
 
 Welcome to marker, a finder utility for remembering where your files are!
+*WARNING\: This is only meant for Mac. I may create marker for Windows and Linux when I get a Windows & Linux PC*
 
 ## Installation
 You can get a prebuilt package in the [releases](https://github.com/Nv7-GitHub/marker/releases/) section.
@@ -31,4 +32,13 @@ To delete Marker, delete the following items. Remember to replace ```<your user>
 - In /Users/Shared delete the "Marker" folder.
 - In /Users/```<your user>```/Library/Services, delete "NewMarker" and "ViewMarkers"
 
-Thank you for using Marker!
+## Compiling from source
+To compile from source, download this repository with ```git clone```, or just download as zip.
+Next, you need to compile the code. To do this, navigate inside the folder with the code and run the following commands:
+```bash
+go get fyne.io/fyne
+go build -o marker main.go new.go find.go
+```
+Once you have done this, you need to move files. Make a folder in the ```Shared``` user called Marker and copy the compiled output, a file called "marker" into the folder you just made. Finally, double-click on both the workflows in the workflows folder and press install in the notification.
+
+## Thank you for using Marker!
