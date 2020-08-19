@@ -20,7 +20,13 @@ Right click on the folder, and hover over "Quick Actions". If you have installed
 ![Options](https://i.imgur.com/KfYx7Qz.png)
 Press NewMarker to make a new marker on that folder. Press ViewMarkers to view, edit, and remove markers.
 
-## Deletion
+### NewMarker
+NewMarker is pretty self explanatory. Just put a title and a description.
+
+### ViewMarkers
+ViewMarkers allows you to view your markers. Click on a marker to view it. Press on the Folder icon to reveal in finder, and and the trash icon to delete the marker. Press the back button to return to the view of all the markers.
+
+## Deleting Marker
 To delete Marker, delete the following items. Remember to replace ```<your user>``` with your username
 - In /Users/Shared delete the "Marker" folder.
 - In /Users/```<your user>```/Library/Services, delete "NewMarker" and "ViewMarkers"
