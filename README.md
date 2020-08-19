@@ -27,6 +27,9 @@ NewMarker is pretty self explanatory. Just put a title and a description.
 ### ViewMarkers
 ViewMarkers allows you to view your markers. Click on a marker to view it. Press on the Folder icon to reveal in finder, and and the trash icon to delete the marker. Press the back button to return to the view of all the markers.
 
+### Themes
+There is both a light theme and a dark theme in marker. It is by default in the dark theme. You can change to the light theme by going to the menu, and pressing theme. In that menu, there are two buttons, Light theme and dark theme
+
 ## Deleting Marker
 To delete Marker, delete the following items. Remember to replace ```<your user>``` with your username
 - In /Users/Shared delete the "Marker" folder.
