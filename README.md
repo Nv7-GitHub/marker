@@ -30,6 +30,9 @@ ViewMarkers allows you to view your markers. Click on a marker to view it. Press
 ### Themes
 There is both a light theme and a dark theme in marker. It is by default in the dark theme. You can change to the light theme by going to the menu, and pressing theme. In that menu, there are two buttons, Light theme and dark theme
 
+### Searching
+Type in your query into the search box. It may take a bit for the results to show up. 
+
 ## Deleting Marker
 To delete Marker, delete the following items. Remember to replace ```<your user>``` with your username
 - In /Users/Shared delete the "Marker" folder.
