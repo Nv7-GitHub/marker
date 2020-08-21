@@ -61,7 +61,7 @@ func Show(search string) {
 	w.SetContent(scroll)
 }
 
-// View is for editing a value
+// View is for viewing a value
 func View(val map[string]string) {
 	toolbar := widget.NewToolbar(
 		widget.NewToolbarAction(theme.NavigateBackIcon(), func() {
