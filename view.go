@@ -77,7 +77,7 @@ func Edit(val map[string]string) {
 		existing[pos] = map[string]string{"Path": p, "Title": title.Text, "Content": content.Text}
 		prefs, _ := json.Marshal(existing)
 		a.Preferences().SetString(key, string(prefs))
-		View(map[string]string{"Path": p, "Title": title.Text, "Content": content.Text, "Pos": val["Pos"]})
+		View(map[string]string{"Path": val["Path"], "Title": title.Text, "Content": content.Text, "Pos": val["Pos"]})
 	})
 
 	hbox := widget.NewHBox(layout.NewSpacer(), cancel, submit, layout.NewSpacer())
