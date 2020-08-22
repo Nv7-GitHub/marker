@@ -23,7 +23,10 @@ func New(path string) {
 	menus(w)
 
 	title = widget.NewEntry()
+	title.PlaceHolder = "Title..."
+
 	content = widget.NewMultiLineEntry()
+	content.PlaceHolder = "Description..."
 
 	form := widget.NewForm()
 	form.Append("Title", title)
@@ -48,10 +51,10 @@ func New(path string) {
 // Submit adds the marker to the preferences
 func Submit() {
 	existing := []map[string]string{}
-	json.Unmarshal([]byte(a.Preferences().StringWithFallback("Markers", "[]")), &existing)
+	json.Unmarshal([]byte(a.Preferences().StringWithFallback(key, "[]")), &existing)
 	existing = append(existing, map[string]string{"Path": p, "Title": title.Text, "Content": content.Text})
 	prefs, _ := json.Marshal(existing)
-	a.Preferences().SetString("Markers", string(prefs))
+	a.Preferences().SetString(key, string(prefs))
 
 	w.Close()
 	a.Quit()
