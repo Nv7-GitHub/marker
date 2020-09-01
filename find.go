@@ -28,7 +28,7 @@ func Find() {
 // Show shows the existing ones in a list of buttons
 func Show(search string) {
 	existing := []map[string]string{}
-	json.Unmarshal([]byte(a.Preferences().StringWithFallback("Markers", "[]")), &existing)
+	json.Unmarshal([]byte(a.Preferences().StringWithFallback(key, "[]")), &existing)
 
 	if searchBox == nil {
 		searchBox = newSearchEntry()

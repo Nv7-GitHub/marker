@@ -10,7 +10,7 @@ import (
 var w fyne.Window
 var a fyne.App
 
-const key = "Marker"
+const key string = "Markers"
 
 func main() {
 	if os.Args[1] == "new" {
